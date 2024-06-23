@@ -4,10 +4,15 @@ const { GoalFollow } = goals;
 
 const bot = mineflayer.createBot({
   host: "localhost", // Minecraft server IP
-  port: 56269, // Minecraft server port
+  port: 52883, // Minecraft server port
   username: "Bot", // Minecraft username
   version: "1.20.4", // Minecraft version (adjust to your server version)
 });
+
+// const { mineflayer: mineflayerViewer } = require("prismarine-viewer");
+// bot.once("spawn", () => {
+//   mineflayerViewer(bot, { port: 3007, firstPerson: false }); // port is the minecraft server port, if first person is false, you get a bird's-eye view
+// });
 
 // Load the pathfinder plugin
 bot.loadPlugin(pathfinder);
